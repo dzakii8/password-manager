@@ -1,0 +1,24 @@
+
+// const axios = require("axios")
+// const length = 10
+
+// async function test() {
+//   try {
+//     const result = await axios.get('https://api.api-ninjas.com/v1/passwordgenerator?length='+ length, {
+//       headers: {
+//         'X-Api-Key': "HYrG1yi3VRNawDJMapPiYw==Y83Ls0yTYG8ZGUYo",
+//         'Content-Type': 'application/json'
+//       }
+//     })
+//     console.log(result.data.random_password);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+// test()
+
+
+//FITUR
+//1. nodemailer, router kirim token.
+//2. cron,di server
+//3. midtrans
