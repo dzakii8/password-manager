@@ -1,10 +1,10 @@
 # password-manager
 ## How to run locally
 - server
-  1. cd server
-  2. npm install
-  3. node bin/www
+  1. Run `cd server`
+  2. Run `npm install`
+  3. Run `node bin/www`
 - client
-  1. cd client
-  2. npm install
-  3. npm run dev
+  1. Run `cd client`
+  2. Run `npm install`
+  3. Run `npm run dev`
