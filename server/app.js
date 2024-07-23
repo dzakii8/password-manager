@@ -2,23 +2,23 @@ if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
 const express = require('express')
-const app = express()
 const authentication = require('./middlewares/authentication')
-
-const userRouter = require("./routes/users");
-const passwordRouter = require("./routes/passwords");
-const thirdRouter = require("./routes/thirdparties");
-const midtransRouter = require("./routes/midtrans");
-
 const cors = require('cors');
+
+const app = express()
 
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 app.use(cors())
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.json({ message: 'Hello World!' })
 })
+
+const userRouter = require("./routes/users");
+const passwordRouter = require("./routes/passwords");
+const thirdRouter = require("./routes/thirdparties");
+const midtransRouter = require("./routes/midtrans");
 
 app.use(userRouter)
 
